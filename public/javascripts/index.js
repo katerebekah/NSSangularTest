@@ -1,6 +1,6 @@
 (function() {
   'use strict';
-  angular.module('kateApp', []).controller('kateController', ['$scope', function($scope){
+  angular.module('myApp', []).controller('kateController', ['$scope', function($scope){
 
 
 

@@ -1,14 +1,18 @@
 doctype html
-html(ng-app='kateApp')
+html(ng-app='myApp')
   head
+    base(href='/')
     title= title
     link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body(ng-controller='kateController')
-    block content
+  body
+    include partials/nav
+    div(ng-view)
+        block content
     
     script(src='/javascripts/jquery.js')
     script(src='/javascripts/angular.js')
     script(src='/javascripts/angular-route.js')
     script(src='/javascripts/bootstrap.min.js')
-    script(src='/javascripts/index.js')
+    script(src='app/app.js')
+    script(src='app/controllers.js')
